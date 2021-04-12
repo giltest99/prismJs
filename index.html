@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prism.js</title>
+    <link rel="stylesheet" href="paper.min.css">
+    <link href="prism-all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+   
+        <h2>Utilisation de Prism.js - Code highlighter</h2>
+        <ul>
+            <li>Télécharger le CSS et le JS.</li>
+            <li>Importer les fichiers CSS et JS dans le fichier HTML (plusieurs choix possibles: langages web principaux, sélection de quelques langages ou tous).<br>
+            Voir <a href="https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript" target="_blank">Download Prism.js</a> pour les langages, plugins et versions dev ou prod.<br>
+        </li>
+            <li>Déclarer la classe langage.</li>
+            <li>Remplacer le &lt; par son entity (voir dans le code HTML).</li>
+            <li>Ci-dessous, quelques exemples de rendu dans plusieurs langages.</li>
+        </ul>
+
+        <br>
+
+        <p>HTML</p>
+        
+        <section class="language-html">
+        <pre style="background-color: lightgray">
+<code>&lt;!DOCTYPE html>
+<code class="">&lt;html>
+<code class="">  &lt;head>
+<code class="">    &lt;link href="themes/prism.css" rel="stylesheet" />
+<code class="">  &lt;/head>
+<code class="">  &lt;body>
+<code class="">    &lt;section class="language-html">&lt;/section>
+<code class="">      &lt;pre>
+<code class="">        &lt;code class="highlight">&lt;h1>hello world !&lt;/h1>&lt;/code>       
+<code class="">      &lt;/pre>
+<code class="">    &lt;/section>
+<code class="">    ...
+<code class="">    ...
+<code class="">    ...
+<code class="">    &lt;script src="prism.js">&lt;/script>
+<code class="">  &lt;/body>
+<code class="">&lt;/html></code>
+        </pre>
+    </section>
+
+    <p>CSS</p>
+    <section class="language-css">
+        <pre style="background-color: lightgray;">
+<code class="highlight">body {
+    <code class="highlight">background-color: gainsboro;
+<code class="highlight">}
+<code class="highlight">#main {
+  <code class="highlight">background-color: teal;
+<code class="highlight">}</code>
+<code class="highlight">.myClass {
+    <code class="highlight">background-color: teal;
+  <code class="highlight">}</code>
+        </pre>
+    </section>
+
+    <p>JAVASCRIPT</p>
+    <section class="language-javascript">
+        <pre style="background-color: lightgray;">
+<code class="highlight">function maFonction(val) {
+<code class="highlight">  const maVar = 'Hello';
+<code class="highlight">  const monTag = document.querySelector('#monDiv');
+<code class="highlight">  monTag.innerHTML = maVar;
+<code class="highlight">  console.log(val);
+<code class="highlight">  document.body.appendChild(monTag);
+<code class="highlight">}
+<code class="highlight">maFonction('Ma valeur');
+        </pre>
+    </section>
+
+    <p>SQL</p>
+    <section class="language-sql">
+        <pre style="background-color: lightgray;">
+<code class="highlight">SELECT * FROM table WHERE table.user = 'john'
+        </pre>
+    </section>
+
+    <footer class="row flex-center">
+        <p>Utilisation de <a href="https://www.getpapercss.com" target="_blank">PAPER.CSS</a> pour le style.</p>
+    </footer>
+
+</div>
+
+	<script src="prism-all.js"></script>
+</body>
+</html>
